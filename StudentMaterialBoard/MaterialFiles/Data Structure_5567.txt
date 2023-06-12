@@ -1,0 +1,73 @@
+Material Board
+
+Actor
+
+1.Admin
+2.Teacher/Lecturer
+3.Student
+
+Admin
+-Login
+Each Department Admin have default Login Id,Password based on that login credentials verified with database,if valid navigate to respective home else show message.
+-Lecturer Registration Request
+ Respective Department Admin have options to Accept/Deny Lecturer registration request.
+-Each Department Admin have option to Add Subject based on sem - particular department
+i.e.,sem1,2,3,4,5,6,7,8,placment-add coding,techinal round
+-Each Department Admin have option to View Uploaded material & provided an option to delete(if unwanted material uploaded)
+
+Lecturer
+--Lecturer Registration
+Lecturer have option to register to the application,Coding base generate OTP & send to lecturer Email Id using SMTP concept,once
+OTP verify,registration request send to respective department admin for accept/deny.
+
+
+--Change Password
+Lecturer have option to change password,once login to the application.
+
+--Lecturer Home Page
+Lecture Home page-LeaderBoard-USN,Student Name,Score(Total Upload material by individual Student*10+Total number of reply to material by individual student*2)each department,Display Top 5 Student
+
+--Lecturer Upload Material
+Lecturer have option to upload materials based on Subject & semester wise.The materails file type(Image,Pdf,document).
+Based on materails,provided an option for discussion forum to post queries.The post queries provided an option to reply & reply can be text & also upload file for reply(Image,Pdf,document).Based on material rating's can be rated out 5 stars.
+Based on material uploaded - display view count,rating points & spam count.
+
+-Lecturer Elevated Material Query
+Student posted query,if no one reply for material query 24 hour or plus.Those material query will be treated as Elevated material query to respective department lecturer.The Department Lecturer provide an option to reply for elevated material query.
+
+-Lecturer Post General Question.
+Lecturer provided an option to post general question with option to reply for posted general question.
+
+
+
+Student
+--Student Registration
+Student have option to register to the application,Coding base generate Password, OTP & send to student Email Id using SMTP concept,onceOTP verify message display registration successfully.Login based on USN & code based generated password send to email
+
+
+--Change Password
+student have option to change password,once login to the application.
+
+--Student Home Page
+Student Home page-LeaderBoard-USN,Student Name,Score(Total Upload material by individual Student*10+Total number of reply to material by individual student*2)each department,Display Top 5 Student
+
+--Student Upload Material
+Student have option to upload materials based on Subject & semester wise.The materails file type(Image,Pdf,document).
+Based on materails,provided an option for discussion forum to post queries.The post queries provided an option to reply & reply can be text & also upload file for reply(Image,Pdf,document).Based on material rating's can be rated out 5 stars.
+Based on material report to spam - 5 unique click - material should automatically deactive
+i.e. each material need an spam link -5 unique student click, material should automatically deactive
+Based on material uploaded - display view count,rating points & spam count.
+
+-Student Post General Question.
+Student provided an option to post general question with option to reply for posted general question.
+
+
+
+
+
+
+ 
+
+
+
+
